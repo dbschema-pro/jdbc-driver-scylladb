@@ -1,0 +1,35 @@
+[versions]
+java = "21"
+kotlin = "2.0.0"
+kotlinLanguageVersion = "2.0"
+slf4j = "2.0.17"
+graal = "24.1.0"
+wisecodersCommonGradle = "5.2.4"
+wisecodersCommonLib = "11.2.0"
+wisecodersCommonJdbc = "2.0.0"
+
+
+[libraries]
+wisecoders-commonLib-commonSlf4j = { module = "com.wisecoders.common_lib:common-slf4j", version.ref = "wisecodersCommonLib" }
+wisecoders-commonJdbc-commonJdbcJvm = { module = "com.wisecoders.common-jdbc:common-jdbc-jvm", version.ref = "wisecodersCommonJdbc" }
+wisecoders-commonJdbc-commonJdbcAws = { module = "com.wisecoders.common-jdbc:common-jdbc-aws", version.ref = "wisecodersCommonJdbc" }
+
+slf4j-api = { module = "org.slf4j:slf4j-api", version.ref = "slf4j" }
+logback-classic = { module = "ch.qos.logback:logback-classic", version = "1.5.18" }
+scylladb-javaDriverCore = { module = "com.scylladb:java-driver-core", version = "4.17.0.1" }
+cassandraDriverKerberos = { module = "com.instaclustr:cassandra-driver-kerberos", version = "3.0.0" }
+awsSdk2-bom = { module = "software.amazon.awssdk:bom", version = "2.33.4" }
+awsSdk2-secretsManager = { module = "software.amazon.awssdk:secretsmanager" }
+jackson-bom = { module = "com.fasterxml.jackson:jackson-bom", version = "2.20.1" }
+jackson-databind = { module = "com.fasterxml.jackson.core:jackson-databind" }
+
+
+# test libraries
+junit-jupiter = { module = "org.junit.jupiter:junit-jupiter", version = "5.13.3" }
+junit-platformLauncher = { module = "org.junit.platform:junit-platform-launcher", version = "1.13.3" }
+assertj-core = { module = "org.assertj:assertj-core", version = "3.27.3" }
+mockitoOld-inline = { module = "org.mockito:mockito-inline", version = "5.2.0" }
+
+
+[plugins]
+wisecoders-commonGradle-jdbcDriver = { id = "com.wisecoders.common_gradle.jdbc_driver.jdbc-driver", version.ref = "wisecodersCommonGradle" }
