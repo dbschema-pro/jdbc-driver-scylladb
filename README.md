@@ -1,7 +1,7 @@
 # ScyllaDB JDBC Driver | DbSchema ScyllaDB Designer
 
 This is an open source JDBC Driver for ScyllaDB.
-The driver is provided and used by [DbSchema ScyllaDB GUI Tool](https://dbschema.com).
+The driver is provided and used by [DbSchema ScyllaDB GUI Tool](https://dbschema.com/documentation/scylladb/).
 The code is using few improvements done to the original code by DataGrip.
 
 ## Licensing
@@ -10,7 +10,7 @@ The code is using few improvements done to the original code by DataGrip.
 [GPL-3 dual license](https://opensource.org/licenses/GPL-3.0).
 The driver is free to use by everyone.
 Code modifications allowed only to the current repository as pull requests
-https://github.com/wise-coders/scylladb-jdbc-driver
+[https://github.com/dbschema-pro/jdbc-driver-scylladb](https://github.com/dbschema-pro/jdbc-driver-scylladb)
 
 ## Features
 
@@ -20,7 +20,7 @@ https://github.com/wise-coders/scylladb-jdbc-driver
 
 ## Downloading the Driver Binaries
 
-[Available here](https://dbschema.com/jdbc-drivers/ScyllaDBJdbcDriver.zip). Unpack and include all jars in your classpath. 
+[Available here](https://dbschema.com/jdbc-drivers/scylladbjdbcdriver.zip). Unpack and include all jars in your classpath. 
 
 ## How to Configure the JDBC Driver
 
