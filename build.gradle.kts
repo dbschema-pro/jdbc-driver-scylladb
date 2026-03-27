@@ -22,5 +22,5 @@ dependencies {
 
     runtimeOnly(libs.logback.classic)
 
-    testImplementation(libs.mockitoOld.inline)
+    testImplementation(libs.mockito.junit.jupiter)
 }
