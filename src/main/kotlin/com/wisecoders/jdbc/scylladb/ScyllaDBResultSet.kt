@@ -416,13 +416,21 @@ class ScyllaDBResultSet @JvmOverloads internal constructor(
     }
 
     @Throws(SQLException::class)
-    override fun getBigDecimal(columnIndex: Int): BigDecimal {
-        throw SQLFeatureNotSupportedException()
+    override fun getBigDecimal(columnIndex: Int): BigDecimal? {
+        checkClosed()
+        if (currentRow != null) {
+            return currentRow!!.getBigDecimal(columnIndex - 1)
+        }
+        throw SQLException("Exhausted ResultSet.")
     }
 
     @Throws(SQLException::class)
-    override fun getBigDecimal(columnLabel: String): BigDecimal {
-        throw SQLFeatureNotSupportedException()
+    override fun getBigDecimal(columnLabel: String): BigDecimal? {
+        checkClosed()
+        if (currentRow != null) {
+            return currentRow!!.getBigDecimal(columnLabel)
+        }
+        throw SQLException("Result exhausted.")
     }
 
     @Throws(SQLException::class)
