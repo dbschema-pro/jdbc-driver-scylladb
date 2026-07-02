@@ -19,7 +19,7 @@ scylladb-javaDriverCore = { module = "com.scylladb:java-driver-core", version = 
 cassandraDriverKerberos = { module = "com.instaclustr:cassandra-driver-kerberos", version = "3.0.0" }
 awsSdk2-bom = { module = "software.amazon.awssdk:bom", version = "2.33.4" }
 awsSdk2-secretsManager = { module = "software.amazon.awssdk:secretsmanager" }
-jackson-bom = { module = "com.fasterxml.jackson:jackson-bom", version = "2.20.1" }
+jackson-bom = { module = "com.fasterxml.jackson:jackson-bom", version = "2.22.0" }
 jackson-databind = { module = "com.fasterxml.jackson.core:jackson-databind" }
 
 
